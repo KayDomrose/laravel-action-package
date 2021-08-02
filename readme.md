@@ -154,8 +154,3 @@ Please see the [changelog](changelog.md) for more information on what has change
 ``` bash
 $ composer test
 ```
-
-## Credits
-
-- [Kay Domrose][link-author]
-- [All Contributors][link-contributors]
