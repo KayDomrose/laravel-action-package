@@ -3,6 +3,7 @@
 namespace Kaydomrose\LaravelApiAction;
 
 use Illuminate\Support\ServiceProvider;
+use Kaydomrose\LaravelApiAction\Commands\CreateAction;
 
 class LaravelApiActionServiceProvider extends ServiceProvider
 {
@@ -77,6 +78,8 @@ class LaravelApiActionServiceProvider extends ServiceProvider
         ], 'laravel-api-action.views');*/
 
         // Registering package commands.
-        // $this->commands([]);
+         $this->commands([
+             CreateAction::class
+         ]);
     }
 }

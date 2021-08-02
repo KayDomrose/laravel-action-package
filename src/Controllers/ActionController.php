@@ -2,15 +2,14 @@
 
 namespace Kaydomrose\LaravelApiAction\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
 use Illuminate\Validation\ValidationException;
 use Kaydomrose\LaravelApiAction\Contracts\Action;
 use Kaydomrose\LaravelApiAction\Helpers\MethodParameters;
-use ReflectionException;
 
 abstract class ActionController extends Controller implements Action
 {

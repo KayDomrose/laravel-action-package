@@ -1,26 +1,23 @@
 <?php
 
-
 namespace Kaydomrose\LaravelApiAction\Helpers;
 
-
 use Illuminate\Http\Request;
-use Kaydomrose\LaravelApiAction\Controllers\ActionController;
+use Illuminate\Routing\Controller;
 use ReflectionClass;
 use ReflectionException;
 
 class MethodParameters
 {
-
     /**
      * Get method parameters for route model binding and dependency injection.
      *
-     * @param ActionController $controller
+     * @param Controller $controller
      * @param Request $request
      * @return array
      * @throws ReflectionException
      */
-    public function getMethodParameters(ActionController $controller, Request $request): array
+    public function getMethodParameters(Controller $controller, Request $request): array
     {
         $reflector = new ReflectionClass($controller);
         $methodParameters = [];
