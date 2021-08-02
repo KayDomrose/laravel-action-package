@@ -1,7 +1,7 @@
 {
     "name": "kaydomrose/laravel-api-action",
-    "description": "",
-    "license": "license",
+    "description": "This package simplifies creating api (json) endpoints for your laravel application. ",
+    "license": "MIT",
     "authors": [
         {
             "name": "Kay Domrose",
